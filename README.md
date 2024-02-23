@@ -73,5 +73,3 @@ The following endpoints are available:
   + Once the application is running, you can test the API endpoints using tools like Postman .
 
   - [Download postman](https://www.postman.com/downloads/)
-
-<meta name="google-site-verification" content="_N46kf2t47nrrAbMP_RrzWSqfFSKUODj9NqEWNvV-8Y" />
