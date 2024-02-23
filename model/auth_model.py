@@ -27,7 +27,7 @@ class auth_model:
             def innner2(*args):
 
                 endpoint = request.url_rule
-                print(endpoint)
+                
 
                 token = request.headers.get("Authorization")
                 if re.match("^Bearer *([^ ]+) *$",token ):
