@@ -4,7 +4,6 @@
 This repository contains a Flask API implementation with MySQL database integration. This API serves as a foundation for building web applications that require a backend server to handle HTTP requests and interact with a MySQL database and jwt(json web token  ).
 
 
-
 ## Getting Started
 
 To get started with this Flask API, follow these steps:
@@ -34,21 +33,6 @@ To get started with this Flask API, follow these steps:
     - Update the config.py file with your database credentials.
     - [You can read Mysql documentation ](https://dev.mysql.com/doc/)
     - [You can also read Mysql conection with our model ](https://www.geeksforgeeks.org/python-mysql/)
-
-## Our API Endpoints
-
-The following endpoints are available:
-
-  + GET  - "/user/getall" --> Get all data in our database.
-  + POST - "/user/getone" --> Add data in our database.
-  + POST - "/user/addmultiple" --> Add multiple dataset.
-  + PUT  - "/user/update" -->Update dataset.
-  + DELETE - "/user/delete/<id>" --> Delete dataset using id number.
-  + PATCH  - "/user/patch/<id>" --> update particular column using id number
-  + GET  - "/user/getall/limit/<limit>/page/<page>" --> This is pagination endpoint
-  + PUT - /user/avatar/<uid>/upload" --> Upload Image file in database.
-
-  + POST - "/user/login" --> user login and Create jwt(json web token) token.
 
 ## Dependencies
  
