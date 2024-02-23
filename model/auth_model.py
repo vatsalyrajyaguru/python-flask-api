@@ -27,7 +27,7 @@ class auth_model:
             def innner2(*args):
 
                 endpoint = request.url_rule
-                print(endpoint)
+                
 
                 token = request.headers.get("Authorization")
                 if re.match("^Bearer *([^ ]+) *$",token ):
@@ -35,7 +35,7 @@ class auth_model:
                     # print(split_token)
                     try:
                         jwt_decode = jwt.decode(split_token,key="vatsaly",algorithms=["HS256"])
-                        print(jwt_decode)
+                        
                     except ExpiredSignatureError:
                         return make_response({"error_message":"token expired"},401)
                     

@@ -113,7 +113,7 @@ class user_model:
             "exp":exp_epoch_time
         }
         jwt_token = jwt.encode(payload, "vatsaly", algorithm="HS256")
-        print(jwt_token)
+        
         return make_response({"token":jwt_token},200)
 
         # INSERT INTO `flask_api`.`user` (`id`, `name`, `email`, `phone`, `password`, `role_id`) VALUES ('3', 'hit ', 'hit@gmail.com', '123456783', 'hit123', '12');
